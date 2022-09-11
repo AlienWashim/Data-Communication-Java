@@ -4,13 +4,13 @@ public class nrz_i {
         System.out.println("NRZ-I program executing...");
         System.out.print("Please, Enter input size: ");
         Scanner sc = new Scanner(System.in);
-        int bit_len = sc.nextInt();
-        int arr[] = new int[bit_len];
-        char enc[] = new char[bit_len];
-        int dec[] = new int[bit_len];
+        int bit_len = sc.nextInt(); // input size
+        int arr[] = new int[bit_len]; // input array
+        char enc[] = new char[bit_len]; // encoded data
+        int dec[] = new int[bit_len]; // decoded data
         System.out.print("Enter input data: ");
         //Input 1 0 0 1 1 0 1
-        for (int i = 0; i < bit_len; i++) {
+        for (int i = 0; i < bit_len; i++) { // input of array
             arr[i] = sc.nextInt();
             if(i == 0){
                 System.out.print("\nEnput data: ");

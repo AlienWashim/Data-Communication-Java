@@ -3,7 +3,8 @@ public class nrz_i2 {
         System.out.println("\nInitial State is L");
         char enc[] = new char[bit_len];
         int dec[] = new int[bit_len];
-        int state = 0; //Starting from high
+        
+        int state = 0; //Starting from low
         for (int i = 0; i < bit_len; i++){
             if(arr[i] == 1 && state == 0){
                 state = 1;
